@@ -22,14 +22,27 @@ public class Second extends AppCompatActivity {
         LinearLayoutCompat hall = (LinearLayoutCompat) findViewById(R.id.hall_layout);
         Intent i = getIntent();
         int x = i.getIntExtra("table",0);
+        int y = i.getIntExtra("chair",0);
         if (x==1) {
             ImageView iv = new ImageView(this);
             iv.setImageResource(R.drawable.table);
-            iv.setMaxHeight(100);
-            iv.setMaxWidth(100);
+            iv.setLayoutParams(new android.view.ViewGroup.LayoutParams(200,200));
+            iv.setMaxHeight(120);
+            iv.setMaxWidth(120);
             hall.addView(iv);
-
         }
+        if (y==1) {
+            ImageView iv = new ImageView(this);
+            iv.setImageResource(R.drawable.chair);
+            iv.setLayoutParams(new android.view.ViewGroup.LayoutParams(200,200));
+            iv.setMaxHeight(120);
+            iv.setMaxWidth(120);
+            hall.addView(iv);
+        }
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 }

@@ -28,7 +28,11 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("table",1);
         startActivity(i);
     }
-
+    public  void addchair(View v){
+        Intent i = new Intent(this,Second.class);
+        i.putExtra("chair",1);
+        startActivity(i);
+    }
 
     }
 
