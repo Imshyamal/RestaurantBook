@@ -1,9 +1,11 @@
 package com.andiroot.restaurantbook;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.widget.LinearLayout;
@@ -15,8 +17,22 @@ public class Second extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        Toolbar toolbar=(Toolbar)findViewById(R.id.second_toolbar);
+        Toolbar toolbar = (Toolbar)findViewById(R.id.second_toolbar);
         setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
+        /*toolbar.setNavigationIcon((R.drawable.back_arrow));
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });*/
 
 
         LinearLayoutCompat hall = (LinearLayoutCompat) findViewById(R.id.hall_layout);
