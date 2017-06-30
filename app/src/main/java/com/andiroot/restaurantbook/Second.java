@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.support.v7.widget.LinearLayoutCompat;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
@@ -67,6 +68,7 @@ public class Second extends AppCompatActivity {
         iv2.setLayoutParams(new android.view.ViewGroup.LayoutParams(150, 150));
         iv2.setMaxHeight(30);
         iv2.setMaxWidth(30);
+
         iv2.setPadding(25,0,0,0);
         hall.addView(iv2);
     }

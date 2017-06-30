@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/hall_layout"
@@ -13,8 +14,16 @@
         android:minHeight="?attr/actionBarSize"
         android:background="#ff1e8622"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </android.support.v7.widget.Toolbar>
+        android:layout_height="wrap_content">
 
+
+
+    </android.support.v7.widget.Toolbar>
+<!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hall_layout2">
+    </RelativeLayout>
+-->
 </android.support.v7.widget.LinearLayoutCompat>
